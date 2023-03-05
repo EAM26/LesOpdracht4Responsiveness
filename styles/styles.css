@@ -15,12 +15,41 @@ Table of Contents:
 body {
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
+    background-color: var(--yellow-bg-color);
 }
+
+/* Opdracht 1. kleurenpalet*/
+
+:root {
+    --red-bg-color: #F26D40;
+    --orange-bg-color: #F69051;
+    --yellow-bg-color: #F9C48B;
+    --font-color: #260803;
+    --section-color: #FDEFEC;
+    --my-mobile-size: 576px;
+    --my-tablet-size: 768px;
+    --my-desktop-size: 992px;
+}
+
+p {
+    font-size: 12px;
+}
+
+section {
+    background-color: var(--section-color);
+    margin: 2rem;
+    padding: 3rem;
+}
+
+img {
+    width: 100%;
+}
+
+
 
 /*////////////////////////
     2. Typography
 ////////////////////////*/
-
 
 
 /*////////////////////////
@@ -28,8 +57,40 @@ body {
 ////////////////////////*/
 
 
-
-
 /*////////////////////////
     2. Media Queries
 ////////////////////////*/
+
+/*Opdracht 3 root fontsizes */
+
+
+@media screen and (min-width: 200px) {
+    p {
+        font-size: 1.3rem;
+    }
+
+    body {
+        background-color: var(--yellow-bg-color);
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    p {
+        font-size: 1.5rem;
+    }
+
+    body {
+        background-color: var(--orange-bg-color);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    p {
+        font-size: 2rem;
+    }
+
+    body {
+        background-color: var(--red-bg-color);
+    }
+}
